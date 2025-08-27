@@ -1,3 +1,18 @@
+let bodyElement = document.body;
+
+
+function changeBackgroundColor(){
+  bodyElement.style.backgroundColor = "red";
+}
+
+let myButton =  document.getElementById("exampleButton");
+myButton.addEventListener("click", changeBackgroundColor);
+
+myButton.addEventListener("click", () => {
+  polySynth.triggerAttackRelease("c3", "8n")
+});
+
+
 ///////////// Button
 
 let buttonOutputText = document.getElementById("buttonOutput");
@@ -15,12 +30,14 @@ myButton.addEventListener("mouseleave", () => {
 
 myButton.addEventListener("mousedown", () => { 
   buttonEventText.textContent = "mousedown";
+  heldButtonText.textContent = "true";
 });
 
 myButton.addEventListener("mouseup", () => { 
   buttonEventText.textContent = "mouseup";
+  heldButtonText.textContent = "falsez";
 });
- */
+ 
 ///////////// Checkbox
 let myCheckbox = document.getElementById("exampleCheckbox");
 let checkboxOutputText = document.getElementById("checkboxOutput");
@@ -39,6 +56,10 @@ distCheckbox.addEventListener("click", (e) => {
   let isChecked = e.target.checked;
   toggleDistortion(isChecked);
 });
+
+verbCheckbox.addEventListener("click". (e) => {
+  let isChecked = e.target
+})
 
 ///////////// Radio
 let mySineRadio = document.getElementById("sine");
