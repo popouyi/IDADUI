@@ -19,7 +19,7 @@ let buttonOutputText = document.getElementById("buttonOutput");
 let buttonEventText = document.getElementById("currentButtonEvent");
 let heldButtonText = document.getElementById("buttonHeldEvent");
 
-/* 
+
 myButton.addEventListener("mouseenter", () => { 
   buttonEventText.textContent = "mouseenter";
 });
