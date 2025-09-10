@@ -40,8 +40,12 @@ const distortion = new Tone.Distortion(0);
 
 const reverb = new Tone.Reverb(2);
 
+const delay = new Tone.FeedbackDelay("8n", 0.5)
+
 const meter = new Tone.Meter();
 meter.smoothing = 0.1;
+
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////// Functions
